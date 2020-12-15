@@ -18,9 +18,10 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin_dashboard')->middleware('admin');
+Route::get('/agency', [App\Http\Controllers\AgenceController::class, 'index'])->name('agency_dashboard')->middleware('agency');
+Route::get('/buisness', [App\Http\Controllers\BuisnessController::class, 'index'])->name('buisness_dashboard')->middleware('buisness');
+
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-////////////////////////////////// ADMIN
-Route::middleware('CheckRole')->get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin_dash');
