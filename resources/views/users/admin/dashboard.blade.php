@@ -1,1 +1,1 @@
-here is admin !!
+@extends('layouts.dashboard')
