@@ -20,3 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+////////////////////////////////// ADMIN
+Route::middleware('CheckRole')->get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin_dash');
