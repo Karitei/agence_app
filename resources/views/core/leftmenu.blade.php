@@ -8,7 +8,7 @@
                 </a>
             </li>
             <li class="nav-item" >
-                <a class="nav-item-hold" href="#">
+                <a class="nav-item-hold" href="{{ route('profile') }}">
                     <i class="nav-icon i-Administrator"></i>
                     <span class="nav-text">Utilisateurs</span>
                 </a>

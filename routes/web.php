@@ -27,3 +27,8 @@ Route::get('/dashboard', [App\Http\Controllers\UserController::class, 'select_da
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/add_user', [App\Http\Controllers\UserController::class, 'add_user'])->name('add_user');
+Route::get('/profile', [App\Http\Controllers\UserController::class, 'profile'])->name('profile');
+
+
+Route::get('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+

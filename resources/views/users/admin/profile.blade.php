@@ -1,1 +1,6 @@
-@extends('layouts.default')
+@extends('layouts.dashboard_layout')
+
+@section('content')
+
+
+@endsection

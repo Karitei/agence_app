@@ -27,4 +27,19 @@ class UserController extends Controller
         }
 
     }
+
+    public function profile(){
+
+        $user_role = Auth::user()->role;
+
+        if( $user_role == "0"){
+            return view('users.admin.profile');
+        }
+        if( $user_role == "1"){
+            return view('users.ag_client.profile');
+        }
+        if( $user_role == "2"){
+            return view('users.buss_client.profile');
+        }
+    }
 }

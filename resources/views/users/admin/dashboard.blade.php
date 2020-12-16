@@ -3,9 +3,6 @@
 
 @section('content')
 
-
-
-
             <!-- ============ Body content start ============= -->
             <div class="main-content">
                 <div class="breadcrumb">
@@ -19,9 +16,7 @@
                         <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
                             <div class="card-body text-center"><i class="i-Add-User"></i>
                                 <div class="content">
-
                                     <a href="{{route('add_user')}}" class="text-muted mt-2 mb-0">Ajouter un utilisateur</a>
-
                                 </div>
                             </div>
                         </div>
@@ -30,7 +25,6 @@
                         <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
                             <div class="card-body text-center"><i class="i-Financial"></i>
                                 <div class="content">
-                                    <p class="text-primary text-24 line-height-1 mb-2">$4021</p>
                                     <a href="#" class="text-muted mt-2 mb-0">portefeuille client</a>
                                 </div>
                             </div>
