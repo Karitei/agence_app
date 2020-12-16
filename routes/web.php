@@ -22,8 +22,9 @@ Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->na
 Route::get('/agency', [App\Http\Controllers\AgenceController::class, 'index'])->name('agency_dashboard')->middleware('agency');
 Route::get('/buisness', [App\Http\Controllers\BuisnessController::class, 'index'])->name('buisness_dashboard')->middleware('buisness');
 
-
+Route::get('/dashboard', [App\Http\Controllers\UserController::class, 'select_dashboard'])->name('dashboard');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/add_user', [App\Http\Controllers\UserController::class, 'add_user'])->name('add_user');
 
 
