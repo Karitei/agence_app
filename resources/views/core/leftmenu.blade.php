@@ -27,7 +27,7 @@
                 <div class="triangle"></div>
             </li>
 
-          
+
         </ul>
     </div>
 
