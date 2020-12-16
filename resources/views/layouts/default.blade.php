@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Cards | Gull admin template</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet" />
-    <link href="../../dist-assets/css/themes/lite-purple.css" rel="stylesheet" />
-    <link href="../../dist-assets/css/plugins/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="{{asset('dist-assets/css/themes/lite-purple.css')}}" rel="stylesheet" />
+    <link href="{{asset('dist-assets/css/plugins/perfect-scrollbar.css')}}" rel="stylesheet" />
     <link rel="stylesheet" href="../../dist-assets/css/plugins/fontawesome-5.css" />
     <link href="../../dist-assets/css/plugins/metisMenu.min.css" rel="stylesheet" />
 </head>
