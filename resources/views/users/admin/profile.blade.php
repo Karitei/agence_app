@@ -14,7 +14,8 @@
         <div class="separator-breadcrumb border-top"></div>
         <div class="card user-profile o-hidden mb-4">
             <div class="header-cover" style="background-image: url('../../dist-assets/images/photo-wide-4.jpg')"></div>
-            <div class="user-info"><img class="profile-picture avatar-lg mb-2" src="../../dist-assets/images/faces/1.jpg" alt="" />
+            <!--div class="user-info"><img class="profile-picture avatar-lg mb-2" src="../../dist-assets/images/faces/avatar.jpg" alt="" /-->
+            <div class="user-info"><img class="profile-picture avatar-lg mb-2" src="{{  Auth::user()->avatar_path}}" alt="" />
                 <p class="m-0 text-24">{{ Auth::user()->name }}</p>
                 <p class="text-muted m-0">Statut de l'utilisateur</p>
             </div>
