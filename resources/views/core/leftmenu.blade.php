@@ -8,18 +8,18 @@
                 </a>
             </li>
             <li class="nav-item" >
-                <a class="nav-item-hold" href="{{ route('profile') }}">
+                <a class="nav-item-hold" href="{{route('welcome')}}">
+                    <i class="nav-icon i-Library"></i>
+                    <span class="nav-text">Acceuil</span>
+                </a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-item-hold" href="{{ route('users_list') }}">
                     <i class="nav-icon i-Administrator"></i>
                     <span class="nav-text">Utilisateurs</span>
                 </a>
             </li>
-            <li class="nav-item" data-item="uikits">
-                <a class="nav-item-hold" href="#">
-                    <i class="nav-icon i-Library"></i>
-                    <span class="nav-text">UI kits</span>
-                </a>
 
-            </li>
             <li class="nav-item" data-item="extrakits">
                 <a class="nav-item-hold" href="#">
                     <i class="nav-icon i-Suitcase"></i>

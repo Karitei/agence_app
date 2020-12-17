@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -41,5 +42,11 @@ class UserController extends Controller
         if( $user_role == "2"){
             return view('users.buss_client.profile');
         }
+    }
+
+    public function userList(){
+
+        $users = User::all();
+        return view('users.users_list', compact('users'));
     }
 }
