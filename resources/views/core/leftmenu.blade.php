@@ -13,12 +13,6 @@
                     <span class="nav-text">Acceuil</span>
                 </a>
             </li>
-            <li class="nav-item" >
-                <a class="nav-item-hold" href="{{ route('users_list') }}">
-                    <i class="nav-icon i-Administrator"></i>
-                    <span class="nav-text">Utilisateurs</span>
-                </a>
-            </li>
 
             <li class="nav-item" data-item="extrakits">
                 <a class="nav-item-hold" href="#">
@@ -26,7 +20,14 @@
                     <span class="nav-text">Offres</span></a>
                 <div class="triangle"></div>
             </li>
-
+            @if(Auth::user()->role == "0")
+            <li class="nav-item" >
+                <a class="nav-item-hold" href="{{ route('users_list') }}">
+                    <i class="nav-icon i-Administrator"></i>
+                    <span class="nav-text">Utilisateurs</span>
+                </a>
+            </li>
+            @endif
 
         </ul>
     </div>

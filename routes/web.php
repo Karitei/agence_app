@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OffersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+///////////////////////////// Home page
+
+
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
+
+
+
+//////////////////////////// Dashboard
+
 
 Auth::routes();
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin_dashboard')->middleware('admin');
@@ -31,5 +41,17 @@ Route::get('/profile', [App\Http\Controllers\UserController::class, 'profile'])-
 Route::get('/users_list', [App\Http\Controllers\UserController::class, 'userList'])->name('users_list');
 
 
+
+/////////////////////////// Offers
+
+Route::get('travel', [OffersController::class, 'travels'])->name('travels');
+Route::get('journey', [OffersController::class, 'journey'])->name('journey');
+
+
+
+///////////////////////////Users
+
+
 Route::get('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+
 
