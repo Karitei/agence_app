@@ -1,8 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.auth.login')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
+@section ('container')
+
+    <!--div class="row justify-content-center"-->
+    <div class="auth-layout-wrap" style="background-image: url(../../dist-assets/images/photo-wide-4.jpg)">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
@@ -84,5 +85,5 @@
             </div>
         </div>
     </div>
-</div>
+
 @endsection

@@ -39,6 +39,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/add_user', [App\Http\Controllers\UserController::class, 'add_user'])->name('add_user');
 Route::get('/profile', [App\Http\Controllers\UserController::class, 'profile'])->name('profile');
 Route::get('/users_list', [App\Http\Controllers\UserController::class, 'userList'])->name('users_list');
+Route::get('/users_list_table', [App\Http\Controllers\UserController::class, 'userListTable'])->name('users_list_table');
 
 
 

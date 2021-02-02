@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Yajra\DataTables\Facades\DataTables;
 
 class UserController extends Controller
 {
@@ -46,7 +48,19 @@ class UserController extends Controller
 
     public function userList(){
 
-        $users = User::all();
-        return view('users.users_list', compact('users'));
+
+          return view('users.users_list');
+
+    }
+
+    public function userListTable(){
+
+        $data = User::all();
+
+
+
+     //   return view('users.users_list', compact('users'));
+        return Datatables::of($data)->toJson()
+            ->make(true);
     }
 }

@@ -30,6 +30,7 @@
 <!-- ============ Search UI End ============= -->
 @include('core.js')
 
+@yield('js')
 </body>
 
 </html>
