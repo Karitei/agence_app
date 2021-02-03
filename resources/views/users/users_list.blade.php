@@ -1,5 +1,11 @@
 @extends('layouts.dashboard_layout')
 
+@section('head')
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css" rel="stylesheet" />
+@endsection
+
 
 @section('content')
     <div class="col-md-12 mb-4">
@@ -9,6 +15,7 @@
 
             </div>
             <div class="card-body w-80 ml-auto mr-auto">
+
                 <div class="table-responsive">
                     <!--table class="display nowrap table table-striped table-bordered" id="scroll_horizontal_table" style="width:100%">
                         <thead>
@@ -27,9 +34,10 @@
                     <table class="table table-sm" id="users" aria-describedby="zero_configuration_table_info">
                         <thead>
                         <tr>
-                            <th>nom d'utilisateur</th>
-                            <th>E-mail</th>
-                            <th>Statut</th>
+                            <th>name</th>
+                            <th>email</th>
+                            <th>STATUT</th>
+
                         </tr>
                         </thead>
                         <tbody>
@@ -72,11 +80,11 @@
                 columns: [
                     {"data": "name", "orderable": true, "searchable": true},
                     {"data": "email", "orderable": true, "searchable": true},
-
+                    {"data": "STATUT", "orderable": true, "searchable": true},
                 ],
                 ajax: {
                     url: '{{route('users_list_table')}}',
-                    type: 'POST',
+                    type: 'GET',
                     data: {
                         '_token': function () {
                             return $('input[name="_token"]').val();
@@ -86,6 +94,8 @@
                 },
             });
         });
+
+
 
     </script>
 

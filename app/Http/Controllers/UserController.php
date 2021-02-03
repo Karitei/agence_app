@@ -55,12 +55,20 @@ class UserController extends Controller
 
     public function userListTable(){
 
-        $data = User::all();
+      //  $data = User::all();
 
+        $users = User::select(['id', 'name', 'email', 'created_at', 'updated_at']);
 
+        return Datatables::of($users)
+            ->editColumn('STATUT', function($agence){
+                // return $agence->STATUT;
+                return $agence->STATUT == '0' ? "<button class='btn btn-danger'><span class=' label label-danger'>Inactif</span> </button>"
+                    :"<button  class='btn btn-primary'><span class='primary label label-default'>Actif</span> </button>" ;
+            })
+            ->rawColumns(['STATUT'])
+            ->make();
 
      //   return view('users.users_list', compact('users'));
-        return Datatables::of($data)->toJson()
-            ->make(true);
+
     }
 }

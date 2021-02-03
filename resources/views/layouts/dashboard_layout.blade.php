@@ -11,7 +11,9 @@
     <link href="{{asset('dist-assets/css/themes/lite-purple.min.css')}}" rel="stylesheet" />
     <link href="{{asset('dist-assets/css/plugins/perfect-scrollbar.min.css')}}" rel="stylesheet" />
 
+    @yield('head')
 </head>
+
 
 <body class="text-left">
 <div class="app-admin-wrap layout-sidebar-large">
@@ -24,8 +26,7 @@
 <!-- =============== Left side End ================-->
 
     <div class="main-content-wrap sidenav-open d-flex flex-column">
-@yield('content')
-
+        @yield('content')
     </div>
 <!-- ============ Search UI End ============= -->
 @include('core.js')
