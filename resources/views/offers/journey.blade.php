@@ -64,10 +64,12 @@
                                                 </div>
                                                 <div class="col-xs-12 hover-item-caption smoothie">
                                                     <div class="vertical-center">
-                                                        <h3 class="smoothie"><a href="single-portfolio.html" title="view project">Biskra</a></h3>
+                                                        <h3 class="smoothie">
+                                                            <a href="{{route('pack1')}}"  title="view project">Biskra</a></h3>
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </li>
                                         <li>
                                             <div class="row hover-item">
@@ -118,6 +120,29 @@
             </div>
         </section>
 
+        <div id="d1" style="display:none;">
+            HELLO NEW DIV
+        </div>
+
 
     </div>
+@endsection
+
+
+@section('js')
+
+    <script>
+     /*   jQuery(document).ready(function(){
+            jQuery('#hideshow').live('click', function(event) {
+                jQuery('#d1').toggle('show');
+            });
+        });
+
+
+        $("#button").click(function() {
+            // assumes element with id='button'
+            $("#d1").toggle();
+        });
+        */
+    </script>
 @endsection

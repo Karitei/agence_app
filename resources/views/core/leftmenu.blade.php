@@ -14,8 +14,8 @@
                 </a>
             </li>
 
-            <li class="nav-item" data-item="extrakits">
-                <a class="nav-item-hold" href="#">
+            <li class="nav-item" >
+                <a class="nav-item-hold" href="{{route('offers_list')}}">
                     <i class="nav-icon i-Suitcase"></i>
                     <span class="nav-text">Offres</span></a>
                 <div class="triangle"></div>

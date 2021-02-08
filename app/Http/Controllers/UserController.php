@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Offer;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -11,7 +12,7 @@ use Yajra\DataTables\Facades\DataTables;
 class UserController extends Controller
 {
     public function add_user(){
-        return view('users.add_user');
+        return view('users.admin.add_user');
     }
 
     public function select_dashboard(){
@@ -49,7 +50,7 @@ class UserController extends Controller
     public function userList(){
 
 
-          return view('users.users_list');
+          return view('users.admin.users_list');
 
     }
 
@@ -71,4 +72,32 @@ class UserController extends Controller
      //   return view('users.users_list', compact('users'));
 
     }
+
+    public function offerList(){
+
+        return view('users.admin.offers_list');
+    }
+
+    public function offerListTable(){
+
+        //  $data = User::all();
+
+        $data = Offer::all();
+
+        return Datatables::of($data)
+         /*   ->editColumn('STATUT', function($agence){
+                // return $agence->STATUT;
+                return $agence->STATUT == '0' ? "<button class='btn btn-danger'><span class=' label label-danger'>Inactif</span> </button>"
+                    :"<button  class='btn btn-primary'><span class='primary label label-default'>Actif</span> </button>" ;
+            })
+            ->rawColumns(['STATUT'])
+
+         */
+            ->make(true);
+
+        //   return view('users.users_list', compact('users'));
+
+    }
+
+
 }

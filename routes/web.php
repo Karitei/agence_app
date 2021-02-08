@@ -41,12 +41,18 @@ Route::get('/profile', [App\Http\Controllers\UserController::class, 'profile'])-
 Route::get('/users_list', [App\Http\Controllers\UserController::class, 'userList'])->name('users_list');
 Route::get('/users_list_table', [App\Http\Controllers\UserController::class, 'userListTable'])->name('users_list_table');
 
+Route::get('/offers_list', [App\Http\Controllers\UserController::class, 'offerList'])->name('offers_list');
+Route::get('/offers_list_table', [App\Http\Controllers\UserController::class, 'offerListTable'])->name('offers_list_table');
 
 
 /////////////////////////// Offers
 
 Route::get('travel', [OffersController::class, 'travels'])->name('travels');
 Route::get('journey', [OffersController::class, 'journey'])->name('journey');
+
+Route::get('/view_pack/{id}', [OffersController::class, 'pack'])->name('view_pack');
+
+
 
 
 
