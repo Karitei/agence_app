@@ -20,9 +20,9 @@ class OffersController extends Controller
         return view('offers.shop',compact('offres'));
     }
 
-    public function pack($id){
+    public function pack(){
 
-        $offres = Offer::where('id', $id)->first();
+//        $offres = Offer::where('id', $id)->first();
        // dd($offres);
         return view('offers.pack');
     }

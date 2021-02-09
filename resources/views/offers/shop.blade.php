@@ -48,7 +48,8 @@
                             <div class="overlay-item-caption smoothie"></div>
                             <div class="hover-item-caption smoothie">
                                 <div class="vertical-center smoothie">
-                                    <a href="{{URL::to('view_pack/'.$offer->id) }}" class="smoothie btn btn-primary">View</a>
+
+                                    <a href="{{route('view_pack') }}" class="smoothie btn btn-primary">View</a>
 
                                 </div>
                             </div>

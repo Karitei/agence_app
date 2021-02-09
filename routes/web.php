@@ -50,7 +50,8 @@ Route::get('/offers_list_table', [App\Http\Controllers\UserController::class, 'o
 Route::get('travel', [OffersController::class, 'travels'])->name('travels');
 Route::get('journey', [OffersController::class, 'journey'])->name('journey');
 
-Route::get('/view_pack/{id}', [OffersController::class, 'pack'])->name('view_pack');
+//Route::get('/view_pack/{id}', [OffersController::class, 'pack'])->name('view_pack');
+Route::get('/view_pack', [OffersController::class, 'pack'])->name('view_pack');
 
 
 
