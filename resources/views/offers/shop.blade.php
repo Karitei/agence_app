@@ -49,7 +49,7 @@
                             <div class="hover-item-caption smoothie">
                                 <div class="vertical-center smoothie">
 
-                                    <a href="{{route('view_pack') }}" class="smoothie btn btn-primary">View</a>
+                                    <a href="{{route('view_pack', $offer->id) }}" class="smoothie btn btn-primary">View</a>
 
                                 </div>
                             </div>

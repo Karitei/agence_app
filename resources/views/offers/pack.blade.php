@@ -44,8 +44,8 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-6 mb50">
                                         <div class="images">
-                                            <span class="onsale">Sale!</span>
-                                            <a class="lb-link" data-rel="product-gallery" href="{{asset('assets/img/shop/product1.jpg')}}" title="Image Title">
+                                            <!--span class="onsale">Sale!</span-->
+                                            <!--lass="lb-link" data-rel="product-gallery" href="{{asset('assets/img/shop/product1.jpg')}}" title="Image Title">
                                                 <img alt="Image Title" class="img-responsive" src="{{asset('assets/img/shop/product1.jpg')}}" title="Image Title">
                                             </a>
 
@@ -59,7 +59,7 @@
                                                 <a class="lb-link" data-rel="product-gallery" href="{{asset('assets/img/shop/product4.jpg')}}" title="Image Title 2">
                                                     <img alt="image title" height="100" width="100" src="{{asset('assets/img/shop/product4.jpg')}}">
                                                 </a>
-                                            </div>
+                                            </div-->
                                         </div>
                                     </div>
 
@@ -68,9 +68,9 @@
 
                                             <div>
                                                 <p class="price">
-                                                    <del><span class="amount">£3.00</span>
-                                                    </del>
-                                                    <ins><span class="amount">£2.00</span>
+                                                    <!--del><span class="amount">£3.00</span>
+                                                    </del-->
+                                                    <ins><span class="amount"></span>
                                                     </ins>
                                                 </p>
                                             </div>
