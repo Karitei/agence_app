@@ -55,8 +55,6 @@ Route::get('/view_pack', [OffersController::class, 'pack'])->name('view_pack');
 
 
 
-
-
 ///////////////////////////Users
 
 
