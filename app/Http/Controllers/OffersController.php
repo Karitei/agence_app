@@ -23,10 +23,25 @@ class OffersController extends Controller
     public function pack($id){
 
 
-        $offre = Offer::where('id', $id)->first();
-        //dd($offres);
-        return view('offers.pack',compact('offre'));
+        $offer = Offer::where('id', $id)->first();
+        //dd($offre);
+        return view('offers.pack',compact('offer'));
     }
+
+
+    public function inscription_pack(){
+        return view('offers.inscription_pack');
+    }
+
+     public function create(){
+            return view('users.admin.create');
+        }
+
+     public function add_offer(Request $request){
+
+        dd($request);
+           // return view('users.admin.create');
+        }
 
 
 }

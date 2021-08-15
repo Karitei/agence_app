@@ -14,7 +14,12 @@
                 <h4 class="card-title mb-3">Liste des offres</h4>
 
             </div>
-            <div class="card-body w-80 ml-auto mr-auto">
+            <div class="col-md-12 mb-4">
+            <a href="{{route('create')}}"  class='btn btn-primary' style="float: right"><span class='primary label label-default'>Nouvelle offre</span> </a>
+
+            </div>
+                <div class="card-body w-80 ml-auto mr-auto">
+
 
                 <div class="table-responsive">
                     <!--table class="display nowrap table table-striped table-bordered" id="scroll_horizontal_table" style="width:100%">

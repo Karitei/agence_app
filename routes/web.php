@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\OffersController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,8 +50,14 @@ Route::get('/offers_list_table', [App\Http\Controllers\UserController::class, 'o
 
 Route::get('travel', [OffersController::class, 'travels'])->name('travels');
 Route::get('journey', [OffersController::class, 'journey'])->name('journey');
+Route::get('create', [OffersController::class, 'create'])->name('create');
+Route::post('add_offer', [OffersController::class, 'add_offer'])->name('add_offer');
+
 
 Route::get('/view_pack/{id}', [OffersController::class, 'pack'])->name('view_pack');
+
+//Route::get('inscription_pack/{id}', [OffersController::class, 'inscription_pack'])->name('inscription_pack');
+Route::get('inscription_pack/{id}', [UserController::class, 'inscription_pack'])->name('inscription_pack');
 //Route::get('/view_pack', [OffersController::class, 'pack'])->name('view_pack');
 
 

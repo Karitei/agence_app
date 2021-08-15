@@ -57,10 +57,10 @@
                             <div class="card-body">
 <
                                 <div class="card-title">Statistiques des ventes</div>
-                                <!--
+                                
                                 <div id="echartBar" style="height: 300px;"></div>
 
-                                -->
+
                             </div>
                         </div>
                     </div>
@@ -68,10 +68,10 @@
                         <div class="card mb-4">
                             <div class="card-body">
                                 <div class="card-title">Pourcentage de ventes</div>
-                                <!--
+
                                 <div id="echartPie" style="height: 300px;"></div>
 
-                                -->
+
 
                             </div>
                         </div>

@@ -99,5 +99,14 @@ class UserController extends Controller
 
     }
 
+    public function inscription_pack($id){
+
+        if (Auth::user()){
+            return view('offers.inscription_pack');
+        }else{
+            return redirect()->route('login');
+        }
+    }
+
 
 }
